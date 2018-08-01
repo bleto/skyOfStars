@@ -1,0 +1,92 @@
+@import 'reset';
+@import 'vars';
+
+html {
+  min-height: 100%;
+}
+body {
+  background: #292f36;
+
+}
+#container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+#canvas {
+  border: 1px solid #a5668b;
+  height: $height;
+  margin: 0 25px 25px 0;
+  width: $width;
+}
+
+.controls {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+
+  & button {
+    cursor: pointer;
+    display: inline;
+  }
+}
+form {
+  left: 0;
+  position: absolute;
+  top: 5%;
+  width: 250px;
+
+  label {
+    clear: both;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 200%;
+    margin: 10px 6px 0;
+
+  }
+  input, select {
+    border: 1px solid #ef709d;
+    display: block;
+    float: right;
+    height: 35px;
+    margin: 10px 0 0;
+    text-align: center;
+    width: 120px;
+    &[type="checkbox"]{
+      height: auto;
+      width: auto;
+      margin: 20px 55px 0 0;
+    }
+  }
+  button {
+    border: 0;
+    clear: both;
+    cursor: pointer;
+    display: block;
+
+    &#add{
+      margin: 5px 0;
+      float: right;
+    }
+    &#run{
+      float: right;
+      height: 35px;
+      margin: 30px 0;
+      width: 120px;
+      background-color: #ef709d;
+    }
+  }
+  .array {
+    display: block;
+    float: right;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+  }
+}
