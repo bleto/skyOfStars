@@ -4,6 +4,9 @@
   "main": "index.html",
   "author": "bleto",
   "license": "MIT",
+  "scripts":{
+      "start": "gulp devel"
+  },
   "dependencies": {
     "autoprefixer": "^8.6.5",
     "babel-core": "^6.26.3",
